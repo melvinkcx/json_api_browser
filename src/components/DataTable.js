@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Spin } from "antd";
 import ListView from "./ListView";
 import DetailView from "./DetailView";
-import { getList, getEntity } from "../redux/actions/entity";
-
 
 class DataTable extends Component {
     render() {

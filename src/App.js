@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
-import { Layout, Menu, Spin } from 'antd';
+import { Layout, Menu } from 'antd';
 import mapStateToProps from './redux/utils';
-import { fetchRegistry } from './redux/actions/registry';
 import DataTable from './components/DataTable';
 import { getList } from './redux/actions/entity';
 import {updateLoadingIndicator} from './redux/actions/meta';

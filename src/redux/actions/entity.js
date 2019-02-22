@@ -1,6 +1,6 @@
 import plurarize from "pluralize";
 import { BACKEND_URL } from "../../constants";
-import { updateCurrentDisplayEntity, updateCurrentLinks, updateCurrentPagination, updateLoadingIndicator } from "./meta";
+import { updateCurrentDisplayEntity, updateCurrentLinks, updateCurrentPagination } from "./meta";
 import { ADD_ENTITY_ENTRIES } from "../actionTypes";
 
 function updateOrAddEntityEntries(payload) {

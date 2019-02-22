@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Async from "react-promise";
 import { Table, Spin } from "antd";
-import { getEntity, getEntityByLink } from "../redux/actions/entity";
+import { getEntity } from "../redux/actions/entity";
 
 const Column = Table.Column;
 

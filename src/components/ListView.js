@@ -22,8 +22,8 @@ export default class ListView extends Component {
     render() {
         const { displayEntity, pagination } = this.props.store.meta;
         const { entities } = this.props.store.entity;
-        const { many, entityType, loading } = displayEntity || {};
-        const { page, pages, count } = pagination || {};
+        const { entityType } = displayEntity || {};
+        const { page, count } = pagination || {};
 
         let dataSource = Object.values(entities[entityType] || {});
         let entityAttributes = Object.keys((Object.values(entities[entityType] || {})[0] || {}).attributes || {})
