@@ -217,7 +217,7 @@ In case we want to add extra entity/model in future, all we have to do is
 just simply update our registry. 
 
 
-## How tCRUD can be done easily?
+## How CRUD can easily be done?
 
 Our entities are stored using associative array with the `entityId` as index. 
 
@@ -248,5 +248,5 @@ The UI is designed in a way that retrieve data with this logic:
 1. Search from redux store.
 2. If not found -> retrieve from backend, then update the redux store.
 
-In this way, we could prevent unnecessary network request. 
+In this way, we could prevent any unnecessary network request. 
 
