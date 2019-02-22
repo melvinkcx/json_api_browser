@@ -6,6 +6,8 @@ running on different ports.
 
 In my case, I installed `django-cors-header` following this [guide](https://github.com/OttoYiu/django-cors-headers).
 
+> Backend Endpoint: This app consumes `127.0.0.1:8000`, you can always update it in `src/constants.js`
+
 
 # Design - Redux Store
 
