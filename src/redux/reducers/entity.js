@@ -11,22 +11,14 @@ export default function entityReducer(state = initialState, action) {
             let { entityType, data, checkEntityType } = action.payload; // Data obj is the entire data object (type, id, attrs, relationships, meta)
 
             const entities = { ...state.entities };
-            if (checkEntityType) {
-                data.forEach(d => {
-                    d.type = pluralize.singular(d.type);
-                    entities[d.type] = {
-                        ...entities[d.type],
-                        [d.id]: d,
-                    };
-                });
-            } else {
-                data.forEach(d => {
-                    entities[entityType]={
-                        ...entities[entityType],
-                        [d.id]: d
-                    }
-                });
-            }
+
+            data.forEach(d => {
+                const type = checkEntityType ? pluralize.singular(d.type) : entityType;
+                entities[type] = {
+                    ...entities[type],
+                    [d.id]: d,
+                };
+            });
 
             return {
                 ...state,
